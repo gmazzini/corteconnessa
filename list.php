@@ -1,6 +1,7 @@
 <?php
+include("setup.php");
 
-if($_GET["login"]!="melX6iy9LnKy3DkU")exit(0);
+if($_GET["login"]!=$login)exit(0);
 $myd=$_POST["myd"];
 if(strlen($myd)==12){
   echo "Cencellata $myd\n";
@@ -8,7 +9,6 @@ if(strlen($myd)==12){
 }
 
 echo "<pre>";
-$base="/home/www/corteconnessa/";
 $photo=scandir($base."img",SCANDIR_SORT_DESCENDING);
 echo "<form method='post'>";
 for($i=0;;$i++){
