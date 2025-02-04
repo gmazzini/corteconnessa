@@ -1,5 +1,5 @@
 <?php
-$base="/home/www/corteconnessa/";
+include("setup.php");
 $act=file_get_contents($base."next");
 ?>
 
