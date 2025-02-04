@@ -13,7 +13,7 @@ $act=file_get_contents($base."next");
 
 <body>
 <center>
-<a href='$sito/up.php'>Upload</a>
+<a href='<?php echo $sito;?>/up.php'>Upload</a>
 &nbsp; &nbsp; &nbsp;
 Nome Foto: <?php echo $act; ?>
 <br>
