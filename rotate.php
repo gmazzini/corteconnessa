@@ -1,7 +1,5 @@
 <?php
-
 include("setup.php");
-$pause=6;
 
 for(;;){
   $photo=scandir($base."img",SCANDIR_SORT_DESCENDING);
@@ -10,7 +8,6 @@ for(;;){
   $len=count($photo);
   if(++$key>=$len-2)$key=0;
   file_put_contents("next",$photo[$key]);
-  sleep(6);
 }
 
 ?>
