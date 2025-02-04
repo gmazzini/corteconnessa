@@ -1,6 +1,6 @@
 <?php
+include("setup.php");
 
-$base="/home/www/www.ff25.it/";
 $dirsrc=$base."src/";
 $dirimg=$base."img/";
 $dirmd5=$base."md5/";
@@ -69,14 +69,14 @@ echo "<input type=\"file\" name=\"myfile\">";
 echo "<button type=\"submit\" name=\"run\">Carica</button>";
 echo "</form>";
 
-echo "Le foto che carichi sono visualizzate nell'album dei 25 anni di Francesca & Franco.<br>";
+echo "Le foto che carichi sono visualizzate nell'album $album.<br>";
 echo "Sono accettate solo ed esclusivamente foto in formato JPEG, ogni altro formato non viene processato.<br>";
-echo "Caricando la foto autorizzi Francesca & Franco alla loro riproduzione in Internet e su supporti cartacei.<br>";
-echo "Caricando la foto autorizzi Francesca & Franco alla loro conservazione.<br>";
-echo "La finalita' e' raccontare il percorso passato e futuro di Francesca & Franco con i propri amici.<br>";
+echo "Caricando la foto autorizzi $chi alla loro riproduzione in Internet e su supporti cartacei.<br>";
+echo "Caricando la foto autorizzi $chi alla loro conservazione.<br>";
+echo "La finalita' e' raccontare il percorso passato e futuro di $album.<br>";
 echo "A parte la foto, non viene conservato sul sistema nessun'altra tipologia di dato personale.<br>";
 echo "Il sistema non effettua alcuna profilazione e non utilizza nessun cookie.<br>";
-echo "Francesca & Franco possono eliminare qualsiasi foto dalla galleria, quando lo ritengono opportuni.<br>";
+echo "$chi possono eliminare qualsiasi foto dalla galleria, quando lo ritengono opportuni.<br>";
 
 function randomname($len){
   list($usec,$sec)=explode(' ',microtime());
