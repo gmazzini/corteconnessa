@@ -1,6 +1,6 @@
 <?php
 
-$base="/home/www/www.ff25.it/";
+include("setup.php");
 $pause=6;
 
 for(;;){
