@@ -5,7 +5,7 @@ $act=file_get_contents($base."next");
 
 <head>
 <meta http-equiv='refresh' content='6' />
-<title>$album</title>
+<title><?php echo $album;?></title>
 <style>
   body {background-color: #F9F4B7;}
 </style>
