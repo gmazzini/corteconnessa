@@ -1,0 +1,2 @@
+rm -rf corteconnessa
+git clone https://github.com/gmazzini/corteconnessa
