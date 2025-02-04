@@ -1,5 +1,5 @@
 <?php
-include("/home/www/corteconnessa/setup.php");
+include("setup.php");
 $photo=scandir($base."img",SCANDIR_SORT_DESCENDING);
 $act=file_get_contents($base."next");
 $key=array_search($act,$photo);
