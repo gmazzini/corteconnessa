@@ -63,7 +63,7 @@ else {
   }
 }
 
-echo "<a href='https://www.ff25.it'>Torna ad Album Foto</a><br><br>";
+echo "<a href='$sito'>Torna ad Album Foto</a><br><br>";
 echo "<form method=\"post\" enctype=\"multipart/form-data\">";
 echo "<input type=\"file\" name=\"myfile\">";
 echo "<button type=\"submit\" name=\"run\">Carica</button>";
